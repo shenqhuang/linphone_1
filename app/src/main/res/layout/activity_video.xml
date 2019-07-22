@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.linphone.mediastream.video.display.GL2JNIView
+        android:id="@+id/id_video_rendering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+    <SurfaceView
+        android:id="@+id/id_video_preview"
+        android:layout_width="120dp"
+        android:layout_height="200dp"/>
+   -->
+
+    <SurfaceView
+        android:id="@+id/id_video_preview"
+        android:layout_width="220dp"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_video_gua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="掛斷"/>
+
+        <Button
+            android:id="@+id/id_video_mute"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="切換靜音"/>
+
+        <Button
+            android:id="@+id/id_video_speaker"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="切換免提"/>
+
+        <Button
+            android:id="@+id/id_video_qiev"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切換攝像"/>
+    </LinearLayout>
+
+</FrameLayout>
