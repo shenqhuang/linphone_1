@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         xx = 53434344;
     }
 
-
+    void test22222(){
+        xx = 53434344;
+    }
 
 
     @Override
